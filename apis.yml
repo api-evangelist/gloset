@@ -1,7 +1,24 @@
 aid: gloset
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gloset.png
 name: Gloset
-description: Gloset is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Gloset is a Mexican peer-to-peer marketplace for buying and selling pre-owned and new fashion
+  — formal dresses, casual wear, handbags, accessories, footwear, jewelry, watches, sportswear, menswear,
+  and swimwear. The platform offers a seller authentication program, curated collections and trending
+  edits, buyer protection with returns and refunds, and integrated payments and shipping, operating
+  primarily in Mexico. Gloset is backed by 500 Global. As of this profile the company publishes no public
+  developer API, API reference, or technical documentation surface — it is a consumer marketplace web/app
+  product.
 url: https://raw.githubusercontent.com/api-evangelist/gloset/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Marketplace
+- Fashion
+- E-Commerce
+- Resale
+- Peer-to-Peer
+- Mexico
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gloset-domain-security.yml
 - type: Website
   url: https://gloset.mx
+- type: TermsOfService
+  url: https://gloset.mx/terms-of-service
+- type: PrivacyPolicy
+  url: https://gloset.mx/privacy-policy
+- type: Support
+  url: https://gloset.mx/faq
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
